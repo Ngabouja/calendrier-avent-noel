@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Chango&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: rgba(57, 81, 26, 1);
+}
+main {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(12, 1fr);
+	background-color: rgba(57, 81, 26, 1);
+	padding: 12px;
+	gap: 12px;
+}
+h1 {
+	font-family: "Chango", sans-serif;
+	font-size: 72px;
+	font-weight: 400;
+	text-align: center;
+}
+button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+	border: none;
+	padding: 18px;
+	transition: all 1s ease-in-out;
+}
+
+button:hover {
+	transform: scale(1.5) rotateY(180deg);
+}
+
+span.snowflake {
+	display: none;
+}
+.Color-1 {
+	background-color: rgba(255, 199, 118, 1);
+	color: rgba(64, 41, 9, 1);
+}
+.Color-1:hover {
+	background-color: rgba(33, 68, 65, 1);
+	color: rgba(186, 236, 231, 1);
+}
+.Color-2 {
+	background-color: rgba(186, 236, 231, 1);
+	color: rgba(33, 68, 65, 1);
+}
+.Color-2:hover {
+	background-color: rgba(33, 68, 65, 1);
+	color: rgba(186, 236, 231, 1);
+}
+.Color-3 {
+	background-color: rgba(229, 211, 228, 1);
+	color: rgba(77, 37, 74, 1);
+}
+.Color-3:hover {
+	background-color: rgba(33, 68, 65, 1);
+	color: rgba(186, 236, 231, 1);
+}
+.Color-4 {
+	background-color: rgba(242, 96, 70, 1);
+	color: rgba(255, 255, 255, 1);
+}
+.Color-4:hover {
+	background-color: rgba(33, 68, 65, 1);
+	color: rgba(186, 236, 231, 1);
+}
+
+@media screen and (min-width: 1024px) {
+	body {
+		background-color: rgba(243, 243, 243, 1);
+	}
+	main {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(8, 1fr);
+		border: 10px;
+		border-radius: 12px;
+	}
+	button {
+		justify-content: space-between;
+	}
+	span.snowflake {
+		display: block;
+	}
+	.background-1 {
+		color: rgba(64, 41, 9, 1);
+		font-size: 50px;
+	}
+	.background-2 {
+		color: rgba(33, 68, 65, 1);
+		font-size: 50px;
+	}
+	.background-3 {
+		color: rgba(77, 37, 74, 1);
+		font-size: 50px;
+	}
+	.background-4 {
+		color: rgba(255, 255, 255, 1);
+		font-size: 50px;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	body {
+		padding: 30px 60px 30px 60px;
+	}
+	main {
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(6, 1fr);
+	}
+	button {
+		min-height: 200px;
+	}
+}
